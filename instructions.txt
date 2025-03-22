@@ -5,9 +5,7 @@ int ReadYear()
 {
     short y;
 
-    cout<<"enter the year ? ";// input year!!!!!!
-
-    cout<<"enter the year ? ";// output letter . 
+    cout<<"enter the year ? ";// input year!!!!! 
 
     cin>>y;
     return y;
