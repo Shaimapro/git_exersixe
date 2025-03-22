@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int ReadYear()
+{
+    short y;
+    cout<<"enter the year ? ";
+    cin>>y;
+    return y;
+}
+int DayInYear(int y)
+{
+    return ((y%400==0||(y%4==0&&y%100!=0))? 366:365);//ععشعا
+}
+int HourInYear(short d)
+{
+    return d*24;
+}
+int MinuteInYear(int d )
+{
+    return HourInYear(d)*60;
+}
+int SecondInYear(int d)
+{
+    return MinuteInYear(d)*60;
+}
+void Display()
+{
+    int d=DayInYear(ReadYear());
+    cout<<" the Number of day : "<<d<<endl;
+    cout<<" the Number of hour : "<<HourInYear(d)<<endl;
+    cout<<" the Number of minute : "<<MinuteInYear(d)<<endl;
+    cout<<" the Number of seconds : "<<SecondInYear(d)<<endl;
+    
+}
+int main()
+{
+    Display();
+    
+    return 0;
+    
+}
