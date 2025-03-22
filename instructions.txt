@@ -4,7 +4,11 @@ using namespace std;
 int ReadYear()
 {
     short y;
+
     cout<<"enter the year ? ";// input year!!!!!!
+
+    cout<<"enter the year ? ";// output letter . 
+
     cin>>y;
     return y;
 }
