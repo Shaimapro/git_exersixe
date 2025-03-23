@@ -1,10 +1,10 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
 int ReadYear()
-{
+{//welcom
     short y;
-    cout<<"enter the year ? ";// output letter !!!!!!!
+    cout<<"enter the year ? ";
     cin>>y;
     return y;
 }
